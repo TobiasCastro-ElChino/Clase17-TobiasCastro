@@ -6,13 +6,11 @@
   "name": "cls17",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "build": "babel src -d lib",
-    "prebuild": "jest"
+    "start": "app.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
