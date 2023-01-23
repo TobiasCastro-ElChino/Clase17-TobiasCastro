@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* ------------------------------------------------------------- */
+/* Aqui comienza el Header */
+header {
+    padding: 5px;
+    background-color: yellow
+}
+#inp{
+    width: 183px;
+}
+#sub{
+    margin-left: 8px;
+    height: 20px;
+    width: 20px;
+
+}
+.burger{
+    display: flex;
+    justify-content: center;
+}
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 10%;
+
+}
+.buscador{
+ display: inline-flex;
+}
+
+/* Aqui finaliza el Header */
+
+/* ------------------------------------------------------------- */
+
+/* Aqui comienza el Main */
+.ads{
+   width: 100%;
+}
+.price{
+    font-size: 18px
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+.titulares{
+    font-size: 24px;
+    padding: 10px;
+}
+/* Carrusel */
+.slider{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slide-track{
+    display: flex;
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+    width: calc(360px * 8);
+}
+.slider .slide{
+    width: 360px;
+    margin-right: 35px;
+}
+.slider .slide img{
+    width: 100%;
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+   100%{
+        -webkit-transform: translateX(calc(-360px * 4));
+        transform: translateX(calc(-360px * 4))
+    }
+}
+/* Fin del Carrusel */
+
+/* Aqui finaliza el Main */
+/* ------------------------------------------------------------- */
+/* Aqui empieza el footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons{
+  color: #1259c3;
+    font-size: 2em;
+    padding: 10¿px;
+}
+/* Aqui finaliza el footer */
+/* ------------------------------------------------------------- */
