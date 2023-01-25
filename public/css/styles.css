@@ -1,10 +1,11 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+    background-color: #ffffff;
 }
 a {
     text-decoration: none;
@@ -13,8 +14,14 @@ a {
 /* ------------------------------------------------------------- */
 /* Aqui comienza el Header */
 header {
+    padding: 10px;
+    background-color: yellow;
+}
+.top-header{
     padding: 5px;
-    background-color: yellow
+}
+header .links{
+    display: none;
 }
 #inp{
     width: 183px;
@@ -49,6 +56,29 @@ header {
 /* ------------------------------------------------------------- */
 
 /* Aqui comienza el Main */
+main{
+    margin: auto;
+    padding: auto;
+    width: 90%;
+}
+article{
+    margin-top: 10px;
+    border-width: 15px;
+}
+.etiquetas{
+    margin-left: 15px;
+    margin-bottom: 6px;
+    border-top: solid 1px #ebebeb;
+   
+}
+main article .etiquetas h3{
+    display: none;
+}
+.articulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .ads{
    width: 100%;
 }
@@ -62,6 +92,8 @@ header {
 .titulares{
     font-size: 24px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 /* Carrusel */
 .slider{
@@ -115,4 +147,22 @@ footer {
     padding: 10¿px;
 }
 /* Aqui finaliza el footer */
+/* ------------------------------------------------------------- */
+
+/* Media Queries */
+@media (min-width:361px){
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header .links{
+        display: inline-block;
+    }
+    header .burger{
+        display: none;
+    }
+    main article .etiquetas h3{
+        display: block;
+    }
+
+}
 /* ------------------------------------------------------------- */
