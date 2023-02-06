@@ -50,6 +50,20 @@ header .links{
 .buscador{
  display: inline-flex;
 }
+.top-fila{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fila-2{
+    display: flex;
+    align-items: center;
+    width: 500%;
+    justify-content: space-around;
+}
+.filas-bottom{
+    display: flex;
+}
 
 /* Aqui finaliza el Header */
 
@@ -79,6 +93,9 @@ main article .etiquetas h3{
     flex-direction: column;
     align-items: center;
 }
+.fila-1{
+    display: flex;
+}
 .ads{
    width: 100%;
 }
@@ -88,6 +105,7 @@ main article .etiquetas h3{
 .descuentos{
     font-size: 16px;
     color: #39b54a;
+    padding-left: 15px;
 }
 .titulares{
     font-size: 24px;
